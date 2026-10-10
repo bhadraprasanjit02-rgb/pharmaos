@@ -24,6 +24,7 @@ public class DesignationServiceImpl implements DesignationService {
 
     @Override
     public DesignationResponse create(DesignationRequest request) {
+        //adding test comment
 
         if (designationRepository.existsByDesignationCode(request.getDesignationCode())) {
             throw new RuntimeException("Designation Code already exists.");
